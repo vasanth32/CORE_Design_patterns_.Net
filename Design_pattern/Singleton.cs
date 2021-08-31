@@ -7,7 +7,7 @@ namespace Design_pattern
      //* Sealed ensures the class being inherited and
      //* object instantiation is restricted in the derived class
      //*/
-    public sealed class Singleton
+    public  class Singleton
     {
         private static int counter = 0;
 
@@ -34,6 +34,7 @@ namespace Design_pattern
         /*
          * Private constructor ensures that object is not
          * instantiated other than with in the class itself
+         * And it wont allow us to inherit the class          
          */
         private Singleton()
         {
@@ -47,6 +48,11 @@ namespace Design_pattern
         {
             Console.WriteLine(message);
         }
+        public class DerivedSingleton : Singleton
+        {
+
+        }
+
 
 
     }
