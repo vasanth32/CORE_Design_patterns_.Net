@@ -10,6 +10,7 @@ namespace Design_pattern
     public  class Singleton
     {
         private static int counter = 0;
+        private static readonly object obj = new object();
 
         /*
          * Private property initilized with null
@@ -27,8 +28,17 @@ namespace Design_pattern
             get
             {
                 if (instance == null)
-                    instance = new Singleton();
+                {
+                    //How to implement a Thread Safe singleton class : Locks are the 
+                    //best way to control thread race condition and they help us to overcome the present situation
+                    lock (obj)
+                    {
+                        if (instance == null)
+                            instance = new Singleton();
+                    }
+                }
                 return instance;
+
             }
         }
         /*
@@ -39,7 +49,7 @@ namespace Design_pattern
         private Singleton()
         {
             counter++;
-            Console.WriteLine("Counter Value " + counter.ToString());
+            Console.WriteLine("Object created " + counter.ToString()+" Time");
         }
         /*
          * Public method which can be invoked through the singleton instance

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace Design_pattern
 {
@@ -19,26 +20,41 @@ namespace Design_pattern
     {
         static void Main(string[] args)
         {
-            /*
-    * Assuming Singleton is created from employee class
-    * we refer to the GetInstance property from the Singleton class
-    */
-            Singleton fromEmployee = Singleton.GetInstance;
-            fromEmployee.PrintDetails("From Employee");
+            Parallel.Invoke(
+           () => Employee(),
+            () => Student()
+            //() => Derived()
+            );
+
+            Console.ReadLine();
+
+
+        }
+
+        private static void Derived()
+        {
+            Singleton.DerivedSingleton derivedObj = new Singleton.DerivedSingleton();
+            derivedObj.PrintDetails("From Derived");
+        }
+
+        private static void Student()
+        {
             /*
              * Assuming Singleton is created from student class
              * we refer to the GetInstance property from the Singleton class
              */
             Singleton fromStudent = Singleton.GetInstance;
             fromStudent.PrintDetails("From Student");
+        }
 
-
-            Singleton.DerivedSingleton derivedObj = new Singleton.DerivedSingleton();
-            derivedObj.PrintDetails("From Derived");
-
-            Console.ReadLine();
-
-
+        private static void Employee()
+        {
+            /*
+             * Assuming Singleton is created from employee class
+            * we refer to the GetInstance property from the Singleton class
+            */
+            Singleton fromEmployee = Singleton.GetInstance;
+            fromEmployee.PrintDetails("From Employee");
         }
     }
 }
