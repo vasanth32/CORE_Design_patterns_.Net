@@ -1,0 +1,13 @@
+C:\@PracticeProjects\Design_pattern\Design_pattern\bin\Debug\netcoreapp3.1\Design_pattern.exe
+C:\@PracticeProjects\Design_pattern\Design_pattern\bin\Debug\netcoreapp3.1\Design_pattern.deps.json
+C:\@PracticeProjects\Design_pattern\Design_pattern\bin\Debug\netcoreapp3.1\Design_pattern.runtimeconfig.json
+C:\@PracticeProjects\Design_pattern\Design_pattern\bin\Debug\netcoreapp3.1\Design_pattern.runtimeconfig.dev.json
+C:\@PracticeProjects\Design_pattern\Design_pattern\bin\Debug\netcoreapp3.1\Design_pattern.dll
+C:\@PracticeProjects\Design_pattern\Design_pattern\bin\Debug\netcoreapp3.1\Design_pattern.pdb
+C:\@PracticeProjects\Design_pattern\Design_pattern\obj\Debug\netcoreapp3.1\Design_pattern.csproj.AssemblyReference.cache
+C:\@PracticeProjects\Design_pattern\Design_pattern\obj\Debug\netcoreapp3.1\Design_pattern.AssemblyInfoInputs.cache
+C:\@PracticeProjects\Design_pattern\Design_pattern\obj\Debug\netcoreapp3.1\Design_pattern.AssemblyInfo.cs
+C:\@PracticeProjects\Design_pattern\Design_pattern\obj\Debug\netcoreapp3.1\Design_pattern.csproj.CoreCompileInputs.cache
+C:\@PracticeProjects\Design_pattern\Design_pattern\obj\Debug\netcoreapp3.1\Design_pattern.dll
+C:\@PracticeProjects\Design_pattern\Design_pattern\obj\Debug\netcoreapp3.1\Design_pattern.pdb
+C:\@PracticeProjects\Design_pattern\Design_pattern\obj\Debug\netcoreapp3.1\Design_pattern.genruntimeconfig.cache
